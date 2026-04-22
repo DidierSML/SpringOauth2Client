@@ -20,7 +20,7 @@ public class SecurityConfig {
                     request.anyRequest().authenticated();
                 })
                 .formLogin(Customizer.withDefaults())
-                .oauth2Login(Customizer.withDefaults())
+                .oauth2Login(Customizer.withDefaults())//Como filtro definimos un mecanismo de autenticación mediante terceros
                 .build();
     }
 }
